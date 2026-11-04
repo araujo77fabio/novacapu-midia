@@ -28,17 +28,17 @@ SEGS = [
   (20.0, 28.0, cap(["Antes de assumir que está coberto:", "*revise a apólice* e o que está declarado, com um *corretor independente*."], 66)),
   (28.0, 33.0, cap(["Seu painel está na apólice?", "Comente *PAINEL* ou chame no WhatsApp"], 64) + f'<div class="pop" style="margin-top:50px;display:inline-flex;align-items:center;gap:22px;background:{Y};color:{G};font:900 66px Inter;padding:28px 44px;border-radius:999px">{icon("chat",70,G,3.6)}(92) 99146-9536</div>'),
   (33.0, DUR + 1, f'''<div class="pop" style="text-align:center"><span style="background:#fff;border-radius:22px;padding:26px 34px;display:inline-flex"><img src="{LOGO}" style="height:120px;display:block"></span></div>
-     <div class="pop" style="text-align:center;margin-top:90px;font:600 48px Inter;color:#fff">Revise seu seguro residencial com a <span style="color:#FFBA00">Novacapu</span></div>
+     <div class="pop" style="text-align:center;margin-top:50px;font:600 48px Inter;color:#fff">Revise seu seguro residencial com a <span style="color:#FFBA00">Novacapu</span></div>
      <div class="pop" style="text-align:center;margin-top:50px"><span style="display:inline-flex;align-items:center;gap:22px;background:{Y};color:{G};font:900 64px Inter;padding:26px 44px;border-radius:999px">{icon("chat",66,G,3.6)}(92) 99146-9536</span></div>
      <div class="pop" style="text-align:center;margin-top:36px;font:600 44px Inter;color:#fff">WhatsApp · seg a sex, 09h às 17h</div>
-     <div class="pop" style="text-align:center;margin-top:70px;font:400 28px Inter;color:rgba(255,255,255,.75);line-height:1.4">Material informativo; coberturas conforme apólice;<br>sujeito a análise da seguradora.<br>Análise/cotação não garante cobertura. Imagem gerada por IA.</div>'''),
+     <div class="pop" style="text-align:center;margin-top:40px;font:400 28px Inter;color:rgba(255,255,255,.75);line-height:1.4">Material informativo; coberturas conforme apólice;<br>sujeito à análise da seguradora.<br>Análise/cotação não garante cobertura. Imagem gerada por IA.</div>'''),
 ]
 segs_html = "".join(f'<div class="seg" data-s="{s}" data-e="{e}">{h}</div>' for s, e, h in SEGS)
 HTML = f"""<!doctype html><html><head><meta charset="utf-8"><style>{BASE_CSS}
 body{{width:1080px;height:1920px;overflow:hidden;background:{K}}}
 .stage{{position:relative;width:1080px;height:1920px;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,#2b292a 0%,{K} 70%)}}
 .shape{{position:absolute;width:0;height:0}}
-.seg{{position:absolute;left:96px;right:120px;top:360px;height:1060px;display:flex;flex-direction:column;justify-content:center;opacity:0}}
+.seg{{position:absolute;left:96px;right:120px;top:320px;height:920px;display:flex;flex-direction:column;justify-content:center;opacity:0}}
 .cap{{margin:0 0 34px;font-family:Inter;font-weight:800;line-height:1.42;color:#fff}}
 .tarja{{background:{G};padding:6px 18px;border-radius:10px;box-decoration-break:clone;-webkit-box-decoration-break:clone}}
 .w{{display:inline-block;opacity:0}}
@@ -46,7 +46,7 @@ body{{width:1080px;height:1920px;overflow:hidden;background:{K}}}
 .pop{{opacity:0}}
 .logo-top{{position:absolute;top:230px;left:50%;transform:translateX(-50%);background:#fff;border-radius:14px;padding:12px 18px;display:flex}}
 .logo-top img{{height:54px;display:block}}
-.reelfoot{{position:absolute;left:60px;right:60px;top:1450px;text-align:center;font:500 25px Inter;color:rgba(255,255,255,.72)}}
+.reelfoot{{position:absolute;left:60px;right:60px;top:1262px;text-align:center;font:500 25px Inter;color:rgba(255,255,255,.72)}}
 .prog{{position:absolute;left:0;top:0;height:8px;background:{Y}}}
 </style></head><body><div class="stage">
 <div class="shape" id="t1" style="left:-80px;top:1500px;border-left:520px solid rgba(255,186,0,.10);border-top:520px solid transparent"></div>
